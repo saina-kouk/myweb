@@ -1,4 +1,4 @@
-from drone import db
+from sainakoukpari import db
 
 class Contact(db.Model):
 	id = db.Column(

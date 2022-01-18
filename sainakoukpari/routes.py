@@ -2,9 +2,9 @@ from datetime import date, datetime, timedelta
 from flask import abort, jsonify, redirect, render_template, request, session, url_for
 from flask_login import current_user, login_required, login_user
 from itsdangerous import URLSafeTimedSerializer
-from drone import app, db
-from drone.forms import ContactForm
-from drone.models import Contact
+from sainakoukpari import app, db
+from sainakoukpari.forms import ContactForm
+from sainakoukpari.models import Contact
 import os, random, requests
 
 def send_email(email, subject, body, email_from, attachment = []):
@@ -26,18 +26,23 @@ def default():
 def home():
 	return redirect(url_for('default'))
 
-@app.route('/film/')
-@app.route('/film')
+@app.route('/home-drone/')
+@app.route('/home-drone')
+def drone():
+	return render_template('home-drone.html')
+
+@app.route('/home-drone/film/')
+@app.route('/home-drone/film')
 def film():
 	return render_template('film.html')
 
-@app.route('/software/')
-@app.route('/software')
+@app.route('/home-drone/software/')
+@app.route('/home-drone/software')
 def software():
 	return render_template('software.html')
 
-@app.route('/contact/', methods = ['GET', 'POST'])
-@app.route('/contact', methods = ['GET', 'POST'])
+@app.route('/home-drone/contact/', methods = ['GET', 'POST'])
+@app.route('/home-drone/contact', methods = ['GET', 'POST'])
 def contact():
 	form = ContactForm()
 	if form.validate_on_submit():

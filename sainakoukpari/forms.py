@@ -1,6 +1,6 @@
 from datetime import date, datetime, timedelta
 from flask_wtf import FlaskForm, RecaptchaField
-from drone.models import Contact
+from sainakoukpari.models import Contact
 from wtforms import SelectField, StringField, SubmitField, TextAreaField
 from wtforms.validators import DataRequired, Email, Length, ValidationError
 

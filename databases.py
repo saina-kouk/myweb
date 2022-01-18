@@ -1,3 +1,3 @@
-from drone import db
+from sainakoukpari import db
 
 db.create_all()

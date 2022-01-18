@@ -31,6 +31,10 @@ html, body {
 	text-align: center;
 }
 
+hr {
+    color: #404040!important;
+}
+
 .background-dark { background-color: #1B2A4E }
 
 .background-gray { background-color: #F9FBFD }
@@ -176,6 +180,12 @@ html, body {
 }
 
 .font-logo {
+	color: #0d0d0d!important;
+	font-family: Didot, serif;
+	font-size: 70px;
+}
+
+.font-brand {
 	color: #FFFFFF!important;
 	font-family: HKGroteskPro-black, serif;
 	font-size: 25px;
@@ -206,6 +216,18 @@ img {
 	color: black;
 }
 
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+.navbar-togglehome {
+    z-index:3;
+}
+
 .payment-card {
 	height: 32rem;
 	z-index: 1;
@@ -231,11 +253,3 @@ img {
 .text-black { color: black!important }
 
 .text-small { font-size: 12px }
-
-.timeline {
-	background-color: #325EEA;
-	border-radius: 20px;
-	color: white;
-	font-family: HKGroteskPro-medium, serif;
-	font-size: 17px;
-}

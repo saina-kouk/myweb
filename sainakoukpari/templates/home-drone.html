@@ -1,0 +1,102 @@
+<!-- home.html | © 2021 DroneBuild -->
+
+{% extends 'base-drone.html' %}
+
+{% block title %}
+	<title> Drone Home </title>
+	<meta name='description' content='DroneBuild'>
+	<meta name='keywords' content='drone, fpv, software, 5" drone, specs, build, racing'>
+{% endblock %}
+
+{% block body %}
+	<section>
+  <body class="bg-dark headroom headroom--top headroom--not-bottom" data-aos-easing="ease" data-aos-duration="800" data-aos-delay="0" style='background: #000000!important'>
+    <div class="offcanvas-wrap">
+    <section class="bg-dark inverted overflow-hidden" style='background: #000000!important'>
+      <div class="container py-20 d-flex flex-column min-vh-100 foreground">
+        <div class="row my-auto justify-content-center">
+          <div class="col-lg-6 text-center skrollable skrollable-between" data-center-center="transform: translateY(0%);" data-top-bottom="transform: translateY(10%);" style="transform: translateY(0%); background: #000000!important">
+             <img src="{{ url_for('static', filename='images/drone.png') }}" class="img-fluid">
+            <h1 class="display-1 text-shadow font-main"> FPV 5" Drone </h1>
+          </div>
+        </div>
+      </div>
+      <span class="scroll-down"></span>
+    </section>
+  </div>
+
+  <section>
+  <div class="container">
+        <hr class="featurette-divider">
+        <div class="row aos-init" data-aos="fade-up" style=" height: 600px;">
+          <div class="card-cool col-md-6 order-md-1" style='background: linear-gradient(to top right, #0000cc 0%, #4dd2ff 100%)'>
+            <h1 class="featurette-heading p-2 mt-2 mb-2"> Specs. <span class="text-white"> Our Build</span></h1>
+            <div class="row pl-4"><p class="lead text-light"> <h5 class="font-weight-bold" style="color: #e6e6e6">AirCraft.</h5></div>
+            <div class="row pl-5 pr-3">
+              <div class="col-md-5"><p class="font-weight-bold" style="color: #cccccc">Frame<p></div>
+              <div class="col-md-7">TBS Source One HD - 5"</div>
+            </div>
+            <div class="row pl-5 pr-3">
+              <div class="col-md-5"><p class="font-weight-bold" style="color: #cccccc">Flight Control/ESC</p></div>
+              <div class="col-md-7">Diatone Mamba F405 MK2 Stack - F40 ESC</div>
+            </div>
+            <div class="row pl-5 pr-3">
+              <div class="col-md-5"><p class="font-weight-bold" style="color: #cccccc">Reciever</p></div>
+              <div class="col-md-7">RadioMaster - R81 2.4GHz 8ch Frsky D8 Nano RX</div>
+            </div>
+            <div class="row pl-5 pr-3">
+              <div class="col-md-5"><p class="font-weight-bold" style="color: #cccccc">Motors</p></div>
+              <div class="col-md-7">iFlight Xing-E PRO 2207 1800/2450kv</div>
+            </div>
+            <div class="row pl-5 pr-3">
+              <div class="col-md-5"><p class="font-weight-bold" style="color: #cccccc">Battery</p></div>
+              <div class="col-md-7">GNB 1100mAh 4S 130C LiPo XT60</div>
+            </div>
+            <div class="row pl-4"><p class="lead text-light"><h5 class="font-weight-bold" style="color: #e6e6e6">Camera.</h5></div>
+            <div class="row pl-5 pr-3">
+              <div class="col-md-5"><p class="font-weight-bold" style="color: #cccccc">Lens</p></div>
+              <div class="col-md-7">example lens</div>
+            </div>
+            <div class="row pl-5 pr-3">
+              <div class="col-md-5"><p class="font-weight-bold" style="color: #cccccc">Video Transmitter</p></div>
+              <div class="col-md-7">example video transmitter</div>
+            </div>
+            <div class="row pl-4"><p class="lead text-light"><h5 class="font-weight-bold" style="color: #e6e6e6">Features.</h5></div>
+            <div class="row pl-5 pr-3">
+              <div class="col-md-5"><p class="font-weight-bold" style="color: #cccccc">Speed</p></div>
+              <div class="col-md-7">large number km/h</div>
+            </div>
+            <div class="row pl-5 pr-3">
+              <div class="col-md-5"><p class="font-weight-bold" style="color: #cccccc">Weight</p></div>
+              <div class="col-md-7">small weight kg</div>
+            </div>
+            <div class="row pl-5 pr-3 pb-2">
+              <div class="col-md-5"><p class="font-weight-bold" style="color: #cccccc">Range</p></div>
+              <div class="col-md-7">large distance m</div>
+            </div>
+          </div>
+          <div class="col-md-6 order-md-2 pr-0 pl-2">
+            <img class="featurette-image img-fluid mx-auto" src="{{ url_for('static', filename='images/specs.png') }}">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row mt-3 aos-init" data-aos="fade-up" style="height: 600px;">
+          <div class="card-cool col-md-6 order-md-2" style='background: linear-gradient(to bottom left, #3c10be 0%, #9875ff 120%)'>
+            <h1 class="featurette-heading p-2 mt-2"> Software. <span class="text-white"> How it works.</span></h1>
+            <p class="lead text-light pl-2"> full code on github </p>
+          </div>
+          <div class="col-md-6 order-md-1 pl-0 pr-2">
+            <img class="featurette-image img-fluid mx-auto" style="width: 500px; height: 600px;" src="{{ url_for('static', filename='images/software.png') }}">
+          </div>
+        </div>
+        <hr class="featurette-divider">
+      </div>
+    </section>
+
+</body>
+</section>
+
+<!-- <script src="{{ url_for('static', filename='javascript/home.js') }}"></script> -->
+{% endblock %}
