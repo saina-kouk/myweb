@@ -14,7 +14,6 @@ app.config['COMPRESS_ALGORITHM'] = 'gzip'
 Compress(app)
 
 app.config['SECRET_KEY'] = os.environ['SECRET_KEY']
-
 app.config['RECAPTCHA_PUBLIC_KEY'] = os.environ['RECAPTCHA_PUBLIC_KEY']
 app.config['RECAPTCHA_PRIVATE_KEY'] = os.environ['RECAPTCHA_PRIVATE_KEY']
 

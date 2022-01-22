@@ -156,17 +156,7 @@ hr {
   border-radius: 25px; /* 5px rounded corners */
 }
 
-/*img {
-  border-radius: 5px 5px 0 0;
-}*/
-
 .cls-1 { fill: #002E6D }
-
-.FAQ {
-	color: rgb(80, 102, 144)!important;
-	font-family: HKGroteskPro-medium, serif;
-	font-size: 40px;
-}
 
 .font-header {
 	color: rgb(80, 102, 144)!important;
@@ -227,13 +217,6 @@ img {
 .navbar-togglehome {
     z-index:3;
 }
-
-.payment-card {
-	height: 32rem;
-	z-index: 1;
-}
-
-.payment-offset { height: 28em }
 
 #seen-in {
 	color: #F8F9F9!important;
