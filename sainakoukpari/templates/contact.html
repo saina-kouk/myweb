@@ -9,6 +9,23 @@
 {% endblock %}
 
 {% block body %}
+<section class='mt-3 py-5 border-top background-gray'>
+<div class='container'>
+
+	<div class='row mt-2 mb-4 pt-5 justify-content-center'>
+	<div class='col-12 col-lg-8 mt-5'>
+		<h3 class='text-center'> Let us hear from you directly! </h3>
+		<p class='mt-4 text-center text-muted'> Contact us if you have any questions or view my personal website <a class='mt-4 text-center text-muted' href="{{ url_for('home') }}"> here </a></p>
+	</div>
+	</div>
+
+</div>
+</section>
+
+<div class='mb-5 pb-5 border-light border-rel'> / </div>
+{% endblock %}
+
+<!-- {% block body %}
 <section class='mt-3 pt-1 border-top background-gray'>
 <div class='container'>
 	<div class='row mt-2 mb-4 pt-5 justify-content-center'>
@@ -108,4 +125,4 @@
     	window.history.replaceState(null, null, window.location.href);
     }
 </script>
-{% endblock %}
+{% endblock %} -->
