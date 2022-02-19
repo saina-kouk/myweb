@@ -29,7 +29,8 @@
   <div class="container">
         <hr class="featurette-divider">
         <div class="row aos-init" data-aos="fade-up" style=" height: 600px;">
-          <div class="card-cool col-md-6 order-md-1" style='background: linear-gradient(to top right, #0000cc 0%, #4dd2ff 100%)'>
+          <div class="card-cool col-12 col-lg-6 order-md-1" style='background: linear-gradient(to top right, #0000cc 0%, #4dd2ff 100%)'>
+            <!-- col-md-6 order-md-1 -->
             <h1 class="featurette-heading p-2 mt-2 mb-2"> Specs. <span class="text-white"> Our Build</span></h1>
             <div class="row pl-4"><p class="lead text-light"> <h5 class="font-weight-bold" style="color: #e6e6e6">AirCraft.</h5></div>
             <div class="row pl-5 pr-3">
@@ -75,7 +76,8 @@
               <div class="col-md-7">large distance m</div>
             </div>
           </div>
-          <div class="col-md-6 order-md-2 pr-0 pl-2">
+          <div class="col-12 col-lg-6 order-md-2 pr-0 pl-2">
+            <!-- col-md-6 order-md-2 -->
             <img class="featurette-image img-fluid mx-auto" src="{{ url_for('static', filename='images/specs.png') }}">
           </div>
         </div>
@@ -83,11 +85,13 @@
         <hr class="featurette-divider">
 
         <div class="row mt-3 aos-init" data-aos="fade-up" style="height: 600px;">
-          <div class="card-cool col-md-6 order-md-2" style='background: linear-gradient(to bottom left, #3c10be 0%, #9875ff 120%)'>
+          <div class="card-cool col-12 col-lg-6 order-md-2" style='background: linear-gradient(to bottom left, #3c10be 0%, #9875ff 120%)'>
+            <!-- col-md-6 order-md-2 -->
             <h1 class="featurette-heading p-2 mt-2"> Software. <span class="text-white"> How it works.</span></h1>
             <p class="lead text-light pl-2"> full code on github </p>
           </div>
-          <div class="col-md-6 order-md-1 pl-0 pr-2">
+          <div class="col-12 col-lg-6 order-md-1 pl-0 pr-2">
+            <!-- col-md-6 order-md-1  -->
             <img class="featurette-image img-fluid mx-auto" style="width: 500px; height: 600px;" src="{{ url_for('static', filename='images/software.png') }}">
           </div>
         </div>
@@ -97,6 +101,4 @@
 
 </body>
 </section>
-
-<!-- <script src="{{ url_for('static', filename='javascript/home.js') }}"></script> -->
 {% endblock %}
